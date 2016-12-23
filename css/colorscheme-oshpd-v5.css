@@ -236,7 +236,64 @@ blockquote.pull-right {
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
 }
+/* responsive tables */
 
+@media screen and (max-width: 767px) {
+  .table-responsive {
+	  border-color: #ddd;
+  }	  
+}
+
+/* -----------------------------------------
+   FORMS
+----------------------------------------- */
+
+legend{
+	color: #333;
+	border-bottom-color:#e5e5e5;
+}
+
+output {
+	color: #555555;
+}	
+
+.form-control {
+	color: #555555;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+}
+
+.form-control::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #777777;
+}
+.form-control::-webkit-input-placeholder {
+  color: #777777;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+	background-color: #d6d6d6;
+}	
+
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
+  color: #72ce6f;
+}
+.has-success .form-control {
+  border-color: #72ce6f;
+}
 
 /* -----------------------------------------
    LAYOUT

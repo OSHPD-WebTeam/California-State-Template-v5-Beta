@@ -1373,7 +1373,8 @@ table th[class*="col-"] {
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border-width: 1px;
+	border-style: solid;
     -webkit-overflow-scrolling: touch;
   }
   .table-responsive > .table {
@@ -1429,9 +1430,9 @@ legend {
   margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
-  color: #333333;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom-width: 1px; 
+  border-bottom-style: solid;
 }
 label {
   display: inline-block;
@@ -1471,7 +1472,6 @@ output {
   padding-top: 7px;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #555555;
 }
 .form-control {
   display: block;
@@ -1480,35 +1480,22 @@ output {
   padding: 6px 12px;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #555555;
-  background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border-width: 1px;
+  border-style:solid;
   border-radius: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-.form-control::-moz-placeholder {
-  color: #777777;
-  opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-  color: #777777;
-}
-.form-control::-webkit-input-placeholder {
-  color: #777777;
 }
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #d6d6d6;
   opacity: 1;
 }
 textarea.form-control {
@@ -1669,16 +1656,10 @@ select[multiple].input-lg {
   height: 33px;
   line-height: 33px;
 }
-.has-success .help-block,
-.has-success .control-label,
-.has-success .radio,
-.has-success .checkbox,
-.has-success .radio-inline,
-.has-success .checkbox-inline {
-  color: #72ce6f;
-}
+
+/* this is where i left off $420 */
+
 .has-success .form-control {
-  border-color: #72ce6f;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .has-success .form-control:focus {
