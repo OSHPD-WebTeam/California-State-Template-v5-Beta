@@ -1,5 +1,34 @@
 /* -----------------------------------------
-   OSHPD COLOR SCHEME
+ * *OSHPD COLOR SCHEME *
+ * -----------------------------------------
+ * CONTENTS *
+ * 
+ DEFAULTS
+ BLOCKQUOTES
+ TABLES
+ FORMS
+ LAYOUT
+ GLOBAL HEADER
+ GLOBAL FOOTER
+ NAVIGATION
+ SEARCH
+ TABS
+ MEDIA
+ PANELS
+ TYPOGRAPHY
+ SECTIONS
+ HEADER SLIDESHOW BANNER
+ PROGRESS BARS
+ COMMENT
+ CARDS
+ LEGACY ACCENTS
+ ACCENT TEXT
+ IMAGE HELPERS
+ HIGH CONTRAST MODE
+ SHAME FILE
+ 5.0 Beta
+ 5.0 Beta OSHPD UPDATES
+ *
 ----------------------------------------- */
 
 /* -----------------------------------------
@@ -58,6 +87,7 @@ h6 .small,
 mark,
 .mark {
   background-color: #fcf8e3;
+  color: #000
 }
   
 .page-header {
@@ -413,7 +443,6 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 }
 /* -----------------------------------------
    SEARCH
-   /source/less/colorscheme.search.less
 ----------------------------------------- */
 .search-container .search-textfield {
   background-color: rgba(255, 255, 255, 0.8);
@@ -460,7 +489,6 @@ h1 span[class^="ca-gov-icon-"]:first-child {
 }
 /* -----------------------------------------
    PANELS
-   /source/less/colorscheme/cs-panels.less
 ----------------------------------------- */
 /* Default Panels */
 .panel-default {
@@ -762,7 +790,6 @@ fieldset[disabled] .panel-standout .panel-heading .options .btn-default.active {
 }
 /* -----------------------------------------
    TABS
-   /source/less/colorscheme/cs-tabs.less
 ----------------------------------------- */
 .tab-group {
   background: #ffffff;
@@ -772,7 +799,6 @@ fieldset[disabled] .panel-standout .panel-heading .options .btn-default.active {
 }
 /* -----------------------------------------
    MEDIA
-   /source/less/colorscheme/media.less
 ----------------------------------------- */
 figure {
   background-color: #e1f2f7;
@@ -780,7 +806,6 @@ figure {
 }
 /* -----------------------------------------
    PANELS
-   /source/less/colorscheme/location.less
 ----------------------------------------- */
 .location.mini [class^="ca-gov-icon"] {
   background: #323a45;
@@ -788,14 +813,12 @@ figure {
 }
 /* -----------------------------------------
    TYPOGRAPHY
-   /source/less/colorscheme/typography.less
 ----------------------------------------- */
 .published {
   color: #777777;
 }
 /* -----------------------------------------
    SECTIONS
-   /source/less/colorscheme/sections.less
 ----------------------------------------- */
 .section-default,
 .card-default {
@@ -1062,7 +1085,6 @@ fieldset[disabled] .card-impact .btn-default.active {
 }
 /* -----------------------------------------
    HEADER SLIDESHOW BANNER
-   /source/less/cagov/header-slideshow-banner.less
 ----------------------------------------- */
 /* HEADER SLIDESHOW */
 .header-slideshow-banner {
@@ -1107,9 +1129,16 @@ fieldset[disabled] .card-impact .btn-default.active {
     top: 15px;
   }
 }
+.header-slideshow-banner .banner-control {
+    color: rgba(255,255,255,0.95);
+    background: #ddd;
+    background-color: rgba(0,0,0,0.4);
+}
+.slide-text {
+    background-color: rgba(0,0,0,0.5);
+}	
 /* -----------------------------------------
    PROGRESS BARS
-   /source/less/cagov/cs-progress-bar.less
 ----------------------------------------- */
 /* Traditional Colors */
 .progress-bar-default {
@@ -1235,7 +1264,6 @@ fieldset[disabled] .card-impact .btn-default.active {
 }
 /* -----------------------------------------
    COMMENT
-   /source/less/cagov/file.less
 ----------------------------------------- */
 .testimonial-default {
   background: #f5f5f5;
@@ -1355,7 +1383,6 @@ fieldset[disabled] .card-impact .btn-default.active {
 }
 /* -----------------------------------------
    CARDS
-   /source/less/colorscheme/cs-cards.less
 ----------------------------------------- */
 .card-default {
   background-color: #ffffff;
@@ -1784,7 +1811,6 @@ a.bg-danger:hover {
 }
 /* -----------------------------------------
    HIGH CONTRAST MODE
-   /source/less/cagov/file.less
 ----------------------------------------- */
 html.high-contrast {
   /* General Reset */
@@ -1821,7 +1847,6 @@ html.high-contrast .close {
    This file should be empty when deploying to production.
    All styles should be moved to their appropriate file.
 
-   /source/less/cagov/colorscheme/_cs-shame.less
 ----------------------------------------- */
 @media (min-width: 768px) {
   .global-header.fixed {
@@ -1899,10 +1924,18 @@ html.high-contrast .close {
   }
 
 /* -----------------------------------------
-   5.0 Beta upgrades.
+   5.0 Beta OSHPD UPDATES
 ----------------------------------------- */
   
 .utility-header {
-    background: #fff !important;
-    color: #004891;
+    background: #569BBD;
+    color: #E1F3FD;
+}
+.utility-header a {
+    color: #E1F3FD;
+}
+.utility-header a:hover,
+.utility-header a:focus,
+.utility-header a.hovered {
+  color: #FFF;
 }

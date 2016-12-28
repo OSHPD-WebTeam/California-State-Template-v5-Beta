@@ -7866,7 +7866,6 @@ a.second-level-link [class^="ca-gov-icon-"] {
 }
 /* -----------------------------------------
    MEDIA IN MAIN NAVIGATION
-   /source/less/cagov/nav-media.less
 ----------------------------------------- */
 .nav-media {
   background-position: 50% 50% !important;
@@ -7959,7 +7958,6 @@ a.second-level-link [class^="ca-gov-icon-"] {
 }
 /* -----------------------------------------
    MOBILE CONTROLS
-   /source/less/cagov/nav-mobile-controls.less
 ----------------------------------------- */
 .mobile-controls {
   font-size: 40px;
@@ -7995,13 +7993,10 @@ a.second-level-link [class^="ca-gov-icon-"] {
 }
 /* -----------------------------------------
    TOP NAVIGATION
-   /source/less/cagov/navigation-top.less
 ----------------------------------------- */
 .utility-header {
   top: 0;
   width: 100%;
-  background: #046B99;
-  color: #ffffff;
 }
 .utility-header .half {
   position: relative;
@@ -8016,14 +8011,12 @@ a.second-level-link [class^="ca-gov-icon-"] {
   }
 }
 .utility-header a {
-  color: #ffffff;
   display: inline-block;
   padding: 3px 0;
 }
 .utility-header a:hover,
 .utility-header a:focus,
 .utility-header a.hovered {
-  color: #FDB81E;
   text-decoration: none;
 }
 .utility-header ul {
@@ -13479,16 +13472,12 @@ fieldset[disabled] .mapthat-facet-item.active {
 	top:auto;
 	border: none;
 	border-radius: 0px;
-    background-color: rgba(0,0,0,0.5);
 }
 
 .header-slideshow-banner .banner-control {
     cursor: pointer;
     font-weight: bold;
     text-align: center;
-    color: rgba(255,255,255,0.95);
-    background: #ddd;
-    background-color: rgba(0,0,0,0.4);
     display: block;
     width: 25px;
     height: 26px;
@@ -13542,10 +13531,6 @@ fieldset[disabled] .mapthat-facet-item.active {
 
 }
 
-body {
-
-  background-color: #efefef;
-}
 .five {
 	width:115px;	
 }
